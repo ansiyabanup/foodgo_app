@@ -15,7 +15,7 @@ class SplashScreen extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
-                mainAxisSize: MainAxisSize.min,
+               mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
@@ -27,9 +27,9 @@ class SplashScreen extends StatelessWidget {
                       fontFamily: 'Lobster',
                     ),
                   ),
-                  const SizedBox(height: 16),
-                  Align(
-                    alignment: Alignment.centerRight,
+                  const SizedBox(height: 10),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 150.0),
                     child: Row(
                       children: [
                         Image.asset('assets/images/start_icon.png', height: 30),

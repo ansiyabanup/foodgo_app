@@ -27,7 +27,7 @@ class CategoryTabs extends StatelessWidget {
             onTap: () => onSelected(category),
             child: Container(
               alignment: Alignment.center,
-              padding: const EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 25),
 
               decoration: BoxDecoration(
                 boxShadow: (isSelected)

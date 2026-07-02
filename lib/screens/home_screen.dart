@@ -1,18 +1,17 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:foodgo_app_test/bloc/home/home_bloc.dart';
 import 'package:foodgo_app_test/bloc/home/home_event.dart';
 import 'package:foodgo_app_test/bloc/home/home_state.dart';
-import 'package:foodgo_app_test/models/food_item.dart';
+
 import 'package:foodgo_app_test/repositories/food_repository.dart';
 import '../widgets/custom_search_bar.dart';
 import '../widgets/category_tabs.dart';
 import '../widgets/food_grid_card.dart';
 import '../widgets/custom_bottom_nav.dart';
 
-/// Entry point for the Home screen. Pass the access token you received
-/// from the login API so authenticated requests can be made.
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
   @override

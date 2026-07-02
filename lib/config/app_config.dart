@@ -10,7 +10,7 @@ class AppColors {
   static const textPrimary = 0xFF1A1A1A;
   static const textSecondary = 0xFF888888;
   static const textLight = 0xFFBBBBBB;
-  static const error = 0xFFD32F2F;
+ 
   static const divider = 0xFF363E44;
   static const inputFill = 0xFFFFFFFF;
   static const inputBorder = 0xFFE5E5E5;

@@ -1,8 +1,6 @@
 import '../models/food_item.dart';
 
-/// Repository for the home screen.
-///
-/// The app now uses local mock data so the home screen works fully offline.
+
 class FoodRepository {
   FoodRepository();
 

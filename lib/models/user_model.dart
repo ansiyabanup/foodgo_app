@@ -1,4 +1,4 @@
-// lib/models/user_model.dart
+
 class UserModel {
   final String email;
   final String accessToken;
