@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CustomSearchBar extends StatelessWidget {
-  final ValueChanged<String> onChanged;
   final VoidCallback onFilterTap;
 
-  const CustomSearchBar({
-    super.key,
-    required this.onChanged,
-    required this.onFilterTap,
-  });
+  const CustomSearchBar({super.key, required this.onFilterTap});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +35,6 @@ class CustomSearchBar extends StatelessWidget {
                 const SizedBox(width: 12),
                 Expanded(
                   child: TextField(
-                    onChanged: onChanged,
                     decoration: const InputDecoration(
                       hintText: 'Search',
                       hintStyle: TextStyle(

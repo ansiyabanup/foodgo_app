@@ -38,14 +38,15 @@ class _HomeView extends StatelessWidget {
       backgroundColor: const Color(0xFFFFFFFF),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 12, 20, 0),
+          padding: const EdgeInsets.fromLTRB(18, 12, 15, 0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _buildHeader(),
               const SizedBox(height: 20),
               CustomSearchBar(
-                onChanged: (q) => context.read<HomeBloc>().add(SearchFoods(q)),
+               
+                
                 onFilterTap: () {},
               ),
               const SizedBox(height: 20),

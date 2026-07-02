@@ -21,7 +21,7 @@ class FoodGridCard extends StatelessWidget {
         boxShadow: [
           const BoxShadow(
             color: Color(0x21000000),
-            blurRadius: 17,
+            blurRadius: 8,
             offset: Offset(0, 6),
           ),
         ],

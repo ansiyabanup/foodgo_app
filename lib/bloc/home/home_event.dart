@@ -19,18 +19,6 @@ class ChangeCategory extends HomeEvent {
   List<Object?> get props => [category];
 }
 
-class SearchFoods extends HomeEvent {
-  final String query;
-  const SearchFoods(this.query);
 
-  @override
-  List<Object?> get props => [query];
-}
 
-class ToggleFavorite extends HomeEvent {
-  final String foodId;
-  const ToggleFavorite(this.foodId);
 
-  @override
-  List<Object?> get props => [foodId];
-}

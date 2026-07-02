@@ -13,7 +13,7 @@ class AuthRepository {
     ),
   );
 
-  //  post
+ 
   Future<UserModel> login({
     required String email,
     required String password,
@@ -24,11 +24,11 @@ class AuthRepository {
         data: {'email': email.trim(), 'password': password},
       );
       final user = UserModel.fromJson(response.data);
-      // Save tokens to local storage
+
       await _saveTokens(user.accessToken, user.refreshToken, user.email);
       return user;
     } on DioException catch (e) {
-      // Extract error message from API response
+     
       final data = e.response?.data;
       if (data is Map && data['detail'] != null) {
         throw Exception(data['detail']);
